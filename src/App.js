@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Comments from "./Component/Comments";
+import NavBar from "./Component/NavBar";
+import ReactPlayer from "react-player";
+import SideBar from "./Component/SideBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar></NavBar>
+      <div className="Container">
+        <div className="row">
+          <div className="content col-8">
+            <ReactPlayer
+              className="MainVideo"
+              url="https://www.youtube.com/watch?v=1eNSWZ4x2ZU&t=1852s&ab_channel=DirtyyDianaDirtyyDiana"
+            />
+            <br></br>
+            <Comments></Comments>
+          </div>
+          <div xs={2}>
+            <SideBar className="SideBar"></SideBar>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

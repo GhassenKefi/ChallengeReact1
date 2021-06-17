@@ -9,12 +9,13 @@ height: 538px!important;
     margin: 5%;
     margin-top: 0;
 }
-.SideBar{
-    width: 20%;
-    float: right;
-}
+
 .Container{width: 100%!important;}
 .row{
 margin: 0!important;}
 .UserInfo-name{color: #030303;}
 .Comment-text{color: #030303a2;}
+.user-email{color: #03030360;}
+.sidebar{
+    width: 100%;
+}
